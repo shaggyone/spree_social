@@ -12,7 +12,7 @@ class Spree::OmniauthCallbacksController < Devise::OmniauthCallbacksController
             return
           end
 
-          authentication = Spree::UserAuthentication.find_by_provider_and_uid(auth_hash['provider'], auth_hash['uid'])
+          authentication = Spree::UserAuthentication.find_by_provider_and_uid(auth_hash['provider'], auth_hash['uid'].to_s)
 
           if authentication.present?
             flash[:notice] = "Signed in successfully"
