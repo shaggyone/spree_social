@@ -3,11 +3,11 @@ SpreeSocial
 
 **NOTE: If you were contributing to the 0.70.x version of this extension, please make sure you are using the 0_70_stable branch, as this branch has recently been forced push to in order to release the 1.0.x extension rewrite.**
 
-Core for all social media related functionality for Spree. 
-The Spree Social gem handles authorization, account creation and association through social media sources such as Twitter and Facebook. 
-This requires the edge source of [Spree](https://github.com/spree/spree). 
-This gem is beta at best and should be treated as such. 
-Features and code base will change rapidly as this is under active development. 
+Core for all social media related functionality for Spree.
+The Spree Social gem handles authorization, account creation and association through social media sources such as Twitter and Facebook.
+This requires the edge source of [Spree](https://github.com/spree/spree).
+This gem is beta at best and should be treated as such.
+Features and code base will change rapidly as this is under active development.
 Use with caution.
 
 Setup for Production
@@ -77,6 +77,20 @@ OAuth Applications @ Facebook, Twitter and / or Github are supported out of the 
 4. Click Create
 
 > This does not seem to be a listed Github item right now. To View and / or edit your applications goto [http://github.com/account/applications/]([http://github.com/account/applications/])
+
+### Vkontakte
+
+[Vkontakte](http://vk.com/editapp?act=create): [http://vk.com/editapp?act=create](http://vk.com/editapp?act=create)
+
+1. Name The Application
+2. Application type web-site
+3. Site URL: http://your_computer.local:3000 for development / http://your-site.com for production
+4. Site domain: your-computer.local / your-site.com respectively
+5. Click Attach site
+6. In your shop admin add for the social authentication method
+```
+scope: notify
+```
 
 ### Other OAuth sources that a currently supported
 
