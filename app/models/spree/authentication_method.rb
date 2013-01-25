@@ -1,5 +1,5 @@
 class Spree::AuthenticationMethod < ActiveRecord::Base
-  attr_accessible :provider, :api_key, :api_secret, :environment, :active
+  attr_accessible :provider, :api_key, :api_secret, :environment, :active, :options
 
   def self.active_authentication_methods?
     found = false
