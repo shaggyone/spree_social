@@ -3,7 +3,8 @@ module SpreeSocial
     ["Facebook", "facebook"],
     ["Twitter", "twitter"],
     ["Vkontakte", "vkontakte"],
-    ["Github", "github"]
+    ["Github", "github"],
+    ["Google", "google_oauth2"]
   ]
 
   class Engine < Rails::Engine
